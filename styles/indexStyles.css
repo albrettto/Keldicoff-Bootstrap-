@@ -1,14 +1,35 @@
-.texture{
-    width: 100%;
-    height: 850px;
-    left: 0px;
-    top: 0px;
-
-    background: url(/images/texture.png);
-    background-size: cover;
+body{
+    overflow-x: hidden;
+    background-image: url(/images/font.png);
     background-repeat: no-repeat;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 }
+
+.wrapper{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bgvideo{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.97;
+}
+
+header{
+    position: relative;
+}
+
+
 
 h1{
     font-family: 'Inter';
@@ -32,7 +53,7 @@ h1{
 }
 
 .navItem:hover{
-    color:#4D443D;
+    color:#A98E68;
 }
 
 .navItem-active{
@@ -41,17 +62,12 @@ h1{
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #4D443D;
+    color: #A98E68;
     text-decoration: none;    
 }
 
 .navItem-active:hover{
     color: #F1EEDB;
-}
-
-
-.map{
-    position:relative;
 }
 
 .title{
@@ -60,124 +76,183 @@ h1{
     font-weight: 700;
     font-size: 72px;
     line-height: 87px;
-    color: #4D443D;
     
-    margin-top: 10%;
+    color: #FFFFFF;
+    
+    width: 950px;
     margin-left: 8%;
+    margin-top: 10%;
 }
 
-.text{
+.carousel-control-prev{
+    margin-top: 25%;
+    margin-left: 2%;
+}
 
+.carousel-control-next{
+    margin-top: 25%;
+    margin-right: 77%;
+}
+
+.texture{
+    width: 85%;
+    height: 500px;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));   
+    object-fit: cover;
+}
+
+
+.firstSect{
+    margin-top: -5%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.titleFirstSect{
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
-    
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
     color: #4D443D;
 
-    margin-left: 8%;
-}
-
-.arrowDown{
     position: absolute;
-    bottom: 15%;
-    right: 50%;   
+    top: 20%;
+    left: 8%;
 }
 
-.coffeeBob{
-    /* box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.25); */
-    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25)); 
-    /* position: absolute;
-    bottom: 17%;
-    right: 3%;    */
-
-    position: relative;
-    left: 85%;
-    z-index: 1;
-
-}
-
-.cupOfCoffee{
-    position: relative;
-    left: 60%;
-    z-index: auto;
-}
-
-.weAre{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    
-    color: #4D443D;   
-    margin-top: 10%;
-    margin-left: 8%; 
-}
-
-.info{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    color: #4D443D;
-    line-height: 0.5em;
-}
-
-.phone{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-
-    color: #A98E68;
-    text-decoration: none;
-}
-
-.phone:hover{
-    color: #4D443D;
-}
-
-.marg{
-    margin-top: 135px;
-}
-
-.addres{
-    margin-top: 110px;
-    margin-left: 8%;
-}
-
-.mailDiv{
-    margin-top: 25px;
-    margin-left: 8%;
-    margin-bottom: 10%;
-}
-
-.mail{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #4D443D;
-    line-height: 0.5em;
-}
-
-.mailLink{
+.textFirstSect{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #A98E68;
-}
-
-.mailLink:hover{
+    font-size: 24px;
+    line-height: 29px;
+    
     color: #4D443D;
+
+    position: absolute;
+    top: 31%;
+    left: 8%;
 }
+
+.btnFirstSect{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4D443D;
+    border: 2px solid #4D443D;
+    background: none;
+    padding: 15px;
+
+    position: absolute;
+    top: 50%;
+    left: 8%;  
+    transition: all 0.5s;
+}
+
+.btnFirstSect:hover{
+    background: #4D443D;
+    color: #F1EEDB;
+}
+
+.secondSect{
+    margin-top: 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.titleSecondSect{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+.btnSecondSect{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #4D443D;
+    background: #FFFFFF;
+    border: none;
+    padding: 15px;  
+    transition: all 0.5s;  
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+.btnSecondSect:hover{
+    background: #949494;
+    color: #585858;
+}
+
+.thirdSect{
+    margin-top: 10%;
+    display: flex;
+    position: relative;
+}
+
+.titleThirdSect{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    
+    color: #4D443D;
+
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+.textThirdSect{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #4D443D;
+    
+
+    position: absolute;
+    top: 48%;
+    left: 8%;
+}
+
+.man{
+    position: absolute;
+    right: 0%;
+    float: right;
+}
+
+.picture{
+    position: absolute;
+    right: 0%;
+    height: 500px;
+}
+
+.coffee-beans{
+    float: right;
+}
+
+
 
 footer{
     background: url(/images/footer.png);
@@ -186,4 +261,66 @@ footer{
     height: 330px;
 }
 
+.callFoot{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #FFFFFF;    
+}
 
+.telFoot{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #FFFFFF;
+    text-decoration: none;    
+}
+
+.telFoot:hover{
+    color: #A98E68;
+}
+
+.mailFoot{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #F1EEDB;
+    text-decoration: none;
+}
+
+.mailFoot:hover{
+    color: #A98E68;
+}
+
+.linkFoot{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7em;
+    
+    color: #F1EEDB;    
+    text-decoration: none;
+}
+
+.linkFoot:hover{
+    color: #A98E68;
+}
+
+.copyright{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}

@@ -1,0 +1,259 @@
+body{
+    overflow-x: hidden;
+}
+
+
+header{
+    position: relative;
+}
+
+
+h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    
+    color: #F1EEDB;    
+}
+
+.navItem{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #4D443D;
+    text-decoration: none;    
+}
+
+.navItem:hover{
+    color:#A98E68;
+}
+
+.navItem-active{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #A98E68;
+    text-decoration: none;    
+}
+
+.navItem-active:hover{
+    color: #F1EEDB;
+}
+
+.navPan{
+    background: #FFFFFF;
+    top: 0;
+    width: 100%;
+    position:sticky;
+    border-bottom: #000000 1px solid;
+}
+
+.navCof{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navCof:hover{
+    color: #A98E68;
+}
+
+main{
+    background: #F1EEDB;
+}
+
+.title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    
+    color: #4D443D;
+}
+
+.subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4D443D;
+    margin-top: 40px;
+}
+
+.coffeeCard{
+    border-radius: 20px;
+    background: #FFFFFF;
+    border: lightgray 1px solid;  
+}
+
+.coffeePict{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+
+    object-fit: cover;   
+
+}   
+
+.coffeeName{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #4D443D;
+    margin-top: 40px;
+}
+
+.coffeePrice{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #4D443D; 
+}
+
+footer{
+    background: url(/images/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 330px;
+}
+
+.callFoot{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #FFFFFF;    
+}
+
+.telFoot{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #FFFFFF;
+    text-decoration: none;    
+}
+
+.telFoot:hover{
+    color: #A98E68;
+}
+
+.mailFoot{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #F1EEDB;
+    text-decoration: none;
+}
+
+.mailFoot:hover{
+    color: #A98E68;
+}
+
+.linkFoot{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7em;
+    
+    color: #F1EEDB;    
+    text-decoration: none;
+}
+
+.linkFoot:hover{
+    color: #A98E68;
+}
+
+.copyright{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+
+.close{
+    width: 50px !important;
+    height: 50px;
+    padding: 0% !important;
+}
+
+.pictModal{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.titleModal{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    
+    color: #4D443D;
+}
+
+.textModal{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #4D443D;    
+}
+
+.infoModal{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #4D443D;
+    
+}
+
+.priceModal{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #4D443D;
+
+    position: absolute;
+    bottom: 0;
+}
